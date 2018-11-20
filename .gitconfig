@@ -1,0 +1,19 @@
+[user]
+	email = 007seadog@gmail.com
+	name = Jasper Yu
+    signingkey =
+[commit]
+	gpgsign = true
+[color]
+	ui = true
+[core]
+	editor = vim
+	autocrlf = input
+	quotepath = false
+[http]
+	proxy =
+[alias]
+	lg = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lm = log --pretty=format:'%s%n   by %C(yellow)%an%Creset (%ad)%n %n%b' --date=local
+[push]
+	default = matching
