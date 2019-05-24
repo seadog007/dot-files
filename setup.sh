@@ -2,6 +2,8 @@
 
 # Run this script by
 # curl -s https://raw.githubusercontent.com/seadog007/dot-files/master/setup.sh | bash
+# Download ssh auth by
+# curl -s https://raw.githubusercontent.com/seadog007/dot-files/master/.ssh/authorized_keys > ~/.ssh/authorized_keys
 
 # For fucking MacOS
 [ "`git 2>&1 | grep -o xcode`" == "xcode" ] && echo "Just install git and run me again" && exit 1
@@ -17,6 +19,7 @@ cp .ssh/verify.sh ~/.ssh
 cp .gitconfig ~/
 cp .tmux.conf ~/
 [ "`basename $SHELL`" == "bash" ] && cp .bashrc ~/
+[ "`uname -a | cut -d\  -f1`" == "Darwin" ] && mv ~/.bashrc ~/.bash_profile
 cp .inputrc ~/
 
 if [ "`uname -a | cut -d\  -f1`" == "Linux" ]
