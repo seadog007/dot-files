@@ -12,6 +12,8 @@ git clone https://github.com/seadog007/dot-files.git /tmp/dot-files
 cd /tmp/dot-files
 cat .ssh/config >> ~/.ssh/config
 cat .ssh/authorized_keys >> ~/.ssh/authorized_keys
+cp .ssh/verify.sh ~/.ssh
+
 cp .gitconfig ~/
 cp .tmux.conf ~/
 [ "`basename $SHELL`" == "bash" ] && cp .bashrc ~/
