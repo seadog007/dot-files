@@ -6,10 +6,11 @@
 # For fucking MacOS
 [ "`git 2>&1 | grep -o xcode`" == "xcode" ] && echo "Just install git and run me again" && exit 1
 
+rm -rf /tmp/dot-files
 git clone https://github.com/seadog007/dot-files.git /tmp/dot-files
 
 cd /tmp/dot-files
-cp .ssh/config >> ~/.ssh/config
+cat .ssh/config >> ~/.ssh/config
 cat .ssh/authorized_keys >> ~/.ssh/authorized_keys
 cp .gitconfig ~/
 cp .tmux.conf ~/
