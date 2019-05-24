@@ -1,9 +1,9 @@
 [user]
 	email = 007seadog@gmail.com
 	name = Jasper Yu
-    signingkey =
+	signingkey = 
 [commit]
-	gpgsign = true
+	gpgsign = false
 [color]
 	ui = true
 [core]
@@ -17,3 +17,4 @@
 	lm = log --pretty=format:'%s%n   by %C(yellow)%an%Creset (%ad)%n %n%b' --date=local
 [push]
 	default = matching
+
