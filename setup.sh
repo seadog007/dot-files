@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run this script by
-# curl https://raw.githubusercontent.com/seadog007/dot-files/master/setup.sh | bash
+# curl -s https://raw.githubusercontent.com/seadog007/dot-files/master/setup.sh | bash
 
 # For fucking MacOS
 [ "`git 2>&1 | grep -o xcode`" == "xcode" ] && echo "Just install git and run me again" && exit 1
@@ -28,6 +28,6 @@ fi
 
 cd
 [ -d "~/.vim" ] && cd ~/.vim && git pull
-[ ! -d "~/.vim" ] && git clone https://github.com/seadog007/dot-files-vim.git .vim && ln -s .vim/.vimrc
+[ ! -d "~/.vim" ] && git clone https://github.com/seadog007/dot-files-vimrc.git .vim && ln -s .vim/.vimrc
 
 rm -rf /tmp/dot-files
